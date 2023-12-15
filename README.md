@@ -2,7 +2,7 @@
 
 Descripción
 
-Breve descripción del propósito y alcance del proyecto. Mencionar que se trata de un pronóstico de series temporales utilizando una red neuronal con embeddings.
+Este proyecto tiene como objetivo desplegar un modelo de machine learning que sirve para pronosticar las ventas futuras,mediante el uso de redes neuronales, específicamente redes neuronales con embeddings. El pronóstico de series temporales es una tarea crucial en la gestión de inventario y planificación de recursos, y este proyecto busca ofrecer una solución precisa y eficiente.
 
 An embedding involves converting a discrete, often categorical, variable into a vector of continuous numbers. In the realm of neural networks, embeddings refer to low-dimensional, learned vectors that represent discrete variables in a continuous space. The significance of neural network embeddings lies in their ability to decrease the dimensionality of categorical variables and effectively capture the essence of categories in the transformed space.
 There are three main objectives for neural network embeddings:
@@ -10,6 +10,8 @@ There are three main objectives for neural network embeddings:
 - Identifying nearest neighbors within the embedding space, which can be utilized for generating recommendations based on user interests or clustering categories.
 - Serving as input to a machine learning model for a supervised task.
 - Facilitating visualization of concepts and relationships between categories.
+
+To serve the model, we will use Flask, a Python microframework for building web applications. Flask is easy to get started and a great way to build web sites and web applications. It is powered by a Python library called WSGI (Web Server Gateway Interface). WSGI provides a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request. The API will be hosted on a personal server. The API will be able to receive a POST request with the data to be predicted and return a JSON with the prediction. 
 
 ## Requisitos del Sistema
 
