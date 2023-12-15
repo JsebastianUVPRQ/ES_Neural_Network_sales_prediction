@@ -1,6 +1,8 @@
 # ES_Neural_Network_sales_prediction_Deploy_API_ML
 
+## Description
 
+This project aims to deploy a machine learning model designed to forecast future sales using neural networks, specifically neural networks with embeddings. Time series forecasting is a critical task in inventory management and resource planning, and this project seeks to provide an accurate and efficient solution.
 
 An embedding involves converting a discrete, often categorical, variable into a vector of continuous numbers. In the realm of neural networks, embeddings refer to low-dimensional, learned vectors that represent discrete variables in a continuous space. The significance of neural network embeddings lies in their ability to decrease the dimensionality of categorical variables and effectively capture the essence of categories in the transformed space.
 There are three main objectives for neural network embeddings:
@@ -9,7 +11,7 @@ There are three main objectives for neural network embeddings:
 - Serving as input to a machine learning model for a supervised task.
 - Facilitating visualization of concepts and relationships between categories.
 
-To serve the model, we will use Flask, a Python microframework for building web applications. Flask is easy to get started and a great way to build web sites and web applications. It is powered by a Python library called WSGI (Web Server Gateway Interface). WSGI provides a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request. The API will be hosted on a personal server. The API will be able to receive a POST request with the data to be predicted and return a JSON with the prediction. 
+To serve the model, we will use Flask, a Python microframework for building web applications. Flask is easy to get started and a great way to build web sites and web applications. It is powered by a Python library called WSGI (Web Server Gateway Interface). WSGI provides a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request. The API will be hosted on a personal server. The API will be able to receive a POST request with the data to be predicted and return a JSON with the prediction.
 
 System Requirements
 Flask
@@ -43,5 +45,5 @@ git clone <https://github.com/JsebastianUVPRQ/ES_Neural_Network_sales_prediction
 cd embeddings_deploy
 
 python app.py
-La API estará disponible en <http://localhost:5000> por defecto.
+The API will be available at http://localhost:5000 by default.
 ```
