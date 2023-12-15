@@ -22,23 +22,23 @@ Activa el ambiente creado con source activate mi_ambiente
 Instalar los paquetes Python que utilizaremos: pip install flask gunicorn
 
 Pasos para crear la API con Flask:
-hora veamos el código con el que crearemos la API y donde incorporaremos nuestro modelo. Está compuesto por los siguientes archivos:
-utiles.py – las funciones comunes al proyecto
+A continuación está el código con el que crearemos la API y donde incorporaremos nuestro modelo. Está compuesto por los siguientes archivos:
+
+utiles.py – Contiene funciones y utilidades comunes que son utilizadas en varios lugares dentro del proyecto.
+
 server.py – Importa la clase Flask de la biblioteca Flask.
-definición de Rutas y Funciones Asociadas
+Define Rutas y Funciones Asociadas
 Crea una instancia de la aplicación Flask.
-Inicio del Servidor
-Incluye código para iniciar el servidor web.
+Inicia del Servidor.
 Se especifica el host y el puerto en los que se ejecutará la aplicación.
 
-test_api.py – Ejemplo de request POST para probar la API
-
 api_train_model.py – entreno y creación del modelo, una red neuronal con Embeddings.
-time_series.csv – Dataset.
 
-Crearemos un método inicial que será invocado desde la url “predict”
-Cargaremos el modelo que entrenamos previamente
-Responderemos peticiones en formato JSON
+test_api.py – Ejemplo de request POST para probar la API. Se crea un método inicial que será invocado desde la url “predict”
+Cargaremos el modelo que entrenamos previamente.
+Responderemos peticiones en formato JSON.
+
+time_series.csv – Dataset.
 
 bash
 ''' bash
