@@ -44,9 +44,9 @@ time_series.csv – Dataset.
 
 bash
 ''' bash
-git clone <URL_del_repositorio>
+git clone <[][https://github.com/JsebastianUVPRQ/ES_Neural_Network_sales_prediction]>
 '''
-cd <nombre_del_directorio>
+cd \embeddings_deploy
 Instalar las dependencias
 pip install -r requirements.txt
 
