@@ -1,17 +1,44 @@
 # ES_Neural_Network_sales_prediction
- 
+
 Descripción
 
 Breve descripción del propósito y alcance del proyecto. Mencionar que se trata de un pronóstico de series temporales utilizando una red neuronal con embeddings.
 
-Requisitos del Sistema
+An embedding involves converting a discrete, often categorical, variable into a vector of continuous numbers. In the realm of neural networks, embeddings refer to low-dimensional, learned vectors that represent discrete variables in a continuous space. The significance of neural network embeddings lies in their ability to decrease the dimensionality of categorical variables and effectively capture the essence of categories in the transformed space.
+There are three main objectives for neural network embeddings:
 
-Lista de dependencias y requisitos que deben estar instalados para ejecutar el proyecto. Esto puede incluir bibliotecas de Python, versiones específicas, etc.
+- Identifying nearest neighbors within the embedding space, which can be utilized for generating recommendations based on user interests or clustering categories.
+- Serving as input to a machine learning model for a supervised task.
+- Facilitating visualization of concepts and relationships between categories.
 
-Instalación:
-Instrucciones paso a paso para instalar y configurar el entorno necesario. Puede incluir comandos para instalar bibliotecas de Python mediante pip u otras dependencias.
+## Requisitos del Sistema
 
-Pasos para desplegar la API con Flask
+### Flask
+
+- Instalar Anaconda en el servidor ó en nuestra máquina local para desarrollo. (Para servidores también puedes usar la versión de mini-conda)
+- Prueba ejecutar el comando “conda” en el terminal para verificar que esté todo en orden.
+- Crear un nuevo environment en el que trabajaremos conda create --name mi_ambiente python=3.6
+Activa el ambiente creado con source activate mi_ambiente
+Instalar los paquetes Python que utilizaremos: pip install flask gunicorn
+
+Pasos para crear la API con Flask:
+hora veamos el código con el que crearemos la API y donde incorporaremos nuestro modelo. Está compuesto por los siguientes archivos:
+utiles.py – las funciones comunes al proyecto
+server.py – Importa la clase Flask de la biblioteca Flask.
+definición de Rutas y Funciones Asociadas
+Crea una instancia de la aplicación Flask.
+Inicio del Servidor
+Incluye código para iniciar el servidor web.
+Se especifica el host y el puerto en los que se ejecutará la aplicación.
+
+test_api.py – Ejemplo de request POST para probar la API
+
+api_train_model.py – entreno y creación del modelo, una red neuronal con Embeddings.
+time_series.csv – Dataset.
+
+Crearemos un método inicial que será invocado desde la url “predict”
+Cargaremos el modelo que entrenamos previamente
+Responderemos peticiones en formato JSON
 
 bash
 ''' bash
@@ -22,4 +49,4 @@ Instalar las dependencias
 pip install -r requirements.txt
 
 python app.py
-La API estará disponible en http://localhost:5000 por defecto.
+La API estará disponible en <http://localhost:5000> por defecto.
