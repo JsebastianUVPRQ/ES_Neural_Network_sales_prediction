@@ -1,8 +1,6 @@
-# ES_Neural_Network_sales_prediction
+# ES_Neural_Network_sales_prediction_Deploy_API_ML
 
-Descripción
 
-Este proyecto tiene como objetivo desplegar un modelo de machine learning que sirve para pronosticar las ventas futuras,mediante el uso de redes neuronales, específicamente redes neuronales con embeddings. El pronóstico de series temporales es una tarea crucial en la gestión de inventario y planificación de recursos, y este proyecto busca ofrecer una solución precisa y eficiente.
 
 An embedding involves converting a discrete, often categorical, variable into a vector of continuous numbers. In the realm of neural networks, embeddings refer to low-dimensional, learned vectors that represent discrete variables in a continuous space. The significance of neural network embeddings lies in their ability to decrease the dimensionality of categorical variables and effectively capture the essence of categories in the transformed space.
 There are three main objectives for neural network embeddings:
@@ -13,42 +11,37 @@ There are three main objectives for neural network embeddings:
 
 To serve the model, we will use Flask, a Python microframework for building web applications. Flask is easy to get started and a great way to build web sites and web applications. It is powered by a Python library called WSGI (Web Server Gateway Interface). WSGI provides a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request. The API will be hosted on a personal server. The API will be able to receive a POST request with the data to be predicted and return a JSON with the prediction. 
 
-## Requisitos del Sistema
+System Requirements
+Flask
+Install Anaconda on the server or on our local machine for development. (For servers, you can also use the mini-conda version.)
+Test running the "conda" command in the terminal to verify that everything is in order.
+Create a new environment where we will work: conda create --name my_environment python=3.6
+Activate the created environment with: source activate my_environment
+Install the required Python packages: pip install flask gunicorn
+Steps to create the API with Flask:
+Below is the code with which we will create the API and incorporate our model. It consists of the following files:
 
-### Flask
+utils.py – Contains functions and common utilities used in various places within the project.
 
-- Instalar Anaconda en el servidor ó en nuestra máquina local para desarrollo. (Para servidores también puedes usar la versión de mini-conda)
-- Prueba ejecutar el comando “conda” en el terminal para verificar que esté todo en orden.
-- Crear un nuevo environment en el que trabajaremos conda create --name mi_ambiente python=3.6
-Activa el ambiente creado con source activate mi_ambiente
-Instalar los paquetes Python que utilizaremos: pip install flask gunicorn
+server.py – Imports the Flask class from the Flask library.
 
-Pasos para crear la API con Flask:
-A continuación está el código con el que crearemos la API y donde incorporaremos nuestro modelo. Está compuesto por los siguientes archivos:
+Defines routes and associated functions.
+Creates an instance of the Flask application.
+Starts the server.
+Specifies the host and port on which the application will run.
+api_train_model.py – Training and creation of the model, a neural network with embeddings.
 
-utiles.py – Contiene funciones y utilidades comunes que son utilizadas en varios lugares dentro del proyecto.
+test_api.py – Example of a POST request to test the API. An initial method is created that will be invoked from the "predict" URL.
 
-server.py – Importa la clase Flask de la biblioteca Flask.
-Define Rutas y Funciones Asociadas
-Crea una instancia de la aplicación Flask.
-Inicia del Servidor.
-Se especifica el host y el puerto en los que se ejecutará la aplicación.
-
-api_train_model.py – entreno y creación del modelo, una red neuronal con Embeddings.
-
-test_api.py – Ejemplo de request POST para probar la API. Se crea un método inicial que será invocado desde la url “predict”
-Cargaremos el modelo que entrenamos previamente.
-Responderemos peticiones en formato JSON.
-
+Loads the previously trained model.
+Responds to requests in JSON format.
 time_series.csv – Dataset.
 
-bash
-''' bash
-git clone <[][https://github.com/JsebastianUVPRQ/ES_Neural_Network_sales_prediction]>
-'''
-cd \embeddings_deploy
-Instalar las dependencias
-pip install -r requirements.txt
+```bash
+git clone <https://github.com/JsebastianUVPRQ/ES_Neural_Network_sales_prediction>
+
+cd embeddings_deploy
 
 python app.py
 La API estará disponible en <http://localhost:5000> por defecto.
+```
