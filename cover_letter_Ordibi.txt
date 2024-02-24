@@ -1,0 +1,32 @@
+December, 2023. 
+        Me presento, mi nombre es Juan Sebastián y la presente es para contar más acerca de mí de lo que se puede leer en un currículum.
+        Durante los últimos años, en paralelo a mi formación universitaria, he tenido la oportunidad de trabajar en diversos proyectos en los que he aplicado técnicas avanzadas de análisis de datos para extraer 
+        información valiosa y tomar decisiones basadas en datos. 
+
+        Mi experiencia incluye el desarrollo de modelos predictivos, el análisis de datasets de gran volumen mediante herramientas estadísticas y la implementación de soluciones de análisis de datos en entornos empresariales.
+        Además de mis habilidades técnicas, también poseo una sólida formación académica en ciencias naturales y exactas; procuro el mantenerme actualizado en las últimas tendencias y avances en esta área. 
+        Soy una persona curiosa, creativa y con excelentes habilidades de resolución de problemas, lo cual me permite abordar desafíos complejos con una mentalidad analítica.
+        Ordibi me ha llamado la atención por su enfoque en la innovación y la calidad en el desarrollo de software. 
+        Admiro su compromiso con la excelencia técnica y el trabajo en equipo, valores que considero fundamentales para el éxito en el campo de la ciencia de datos. 
+
+        Estoy emocionado por la posibilidad de formar parte de su equipo y contribuir con mis conocimientos y habilidades.
+        Agradezco su tiempo y consideración. Adjunto mi currículum para que puedan revisarlo y evaluar mi idoneidad como ML Engineer. 
+        En estos momentos estoy disponible para entrevista entrevistas. Espero tener la oportunidad de discutir más a fondo cómo puedo contribuir al éxito de Ordibi.
+
+
+        Hi! let me introduce myself. 
+        My name is Juan Sebastián, and I'm writing to share more about me beyond what you can find in a resume. 
+        Over the past years, alongside my university education, I've had the chance to engage in various projects where I've applied advanced data analysis techniques to extract valuable 
+        insights and make data-driven decisions. 
+
+        My experience includes developing predictive models, analyzing large datasets using statistical tools, and implementing data analysis solutions in business environments.
+        In addition to my technical skills, I hold a solid academic background in natural and exact sciences. 
+        I strive to stay updated on the latest trends and advancements in this field. I am a curious and creative individual with excellent problem-solving skills, enabling me to tackle complex challenges with an analytical mindset.
+        I'm drawn to Ordibi for its emphasis on innovation and quality in software development. 
+        I admire the commitment to technical excellence and teamwork, values I consider crucial for success in the field of data science. 
+
+        I am excited about the possibility of joining your team and contributing my knowledge and skills.
+        Thank you for your time and consideration. I've attached my resume for your review. 
+        I look forward to the opportunity to discuss how I can contribute to the success of Ordibi in more detail.
+
+        Att. Juan Sebastián Peñaloza Quintana
